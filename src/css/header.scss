@@ -1,0 +1,50 @@
+@import 'var';
+
+@keyframes "blink" {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: white;
+  }
+}
+
+@-webkit-keyframes "blink" {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: white;
+  }
+}
+
+header {
+  // display: flex;
+  // justify-content: center;
+  // align-items: center;
+  min-height: 100vh;
+  background-color: $black;
+}
+
+#greeting-wrapper {
+  width: 570px;
+  height: 112px;
+  padding: 30px;
+}
+
+#greeting,
+.typed-cursor {
+  color: white;
+  font-family: monospace;
+  font-size: 4em;  
+}
+
+#greeting {
+  display: inline;
+  white-space: pre;
+}
+
+.typed-cursor {
+  -webkit-animation: 1s blink step-end infinite;
+  animation: 1s blink step-end infinite;
+}

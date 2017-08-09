@@ -1,0 +1,23 @@
+@import 'var';
+$meter-height: 30px;
+
+#languages {
+  background-color: $black;
+  color: white;
+}
+
+.language {
+  display: flex;
+}
+
+.meterWrapper {
+  position: relative;
+  width: 500px;
+  height: $meter-height;
+  background-color: #e0e0e0;
+}
+
+.meter {
+  position: absolute;
+  height: $meter-height
+}
